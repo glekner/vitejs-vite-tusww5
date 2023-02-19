@@ -1,7 +1,12 @@
 import "./App.css";
 
 function App() {
-  return <div className="App">{moduleElement}</div>;
+  return (
+    <div className="App">
+      {moduleElement}
+      {moduleElement2}
+    </div>
+  );
 }
 
 const moduleElement = (
@@ -9,6 +14,16 @@ const moduleElement = (
     css={`
       font-size: 20rem;
     `}
+  >
+    content
+  </span>
+);
+
+const moduleElement2 = (
+  <span
+    css={{
+      fontSize: "20rem",
+    }}
   >
     content
   </span>
